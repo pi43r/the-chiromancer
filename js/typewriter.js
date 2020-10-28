@@ -14,7 +14,7 @@ $(function(){
 
   mistype: 0,
 
-  caret:'\u2588',
+  caret:'\u2593',
   blink: true,  //can also be a speed number true = speed*3
   blink_perm: true,
   pause_on_tab_switch: true,

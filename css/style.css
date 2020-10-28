@@ -32,11 +32,13 @@ h1{
   text-shadow: 0 0 6px var(--col);
   font-size: 5em;
   line-height: 0.9;
+  display: inline;
 }
 
 h2, h3, h4, h5, h6, p, a {
   font-family: 'victor', monospace;
   text-shadow: 0 0 5px var(--col);
+  display: inline;
 }
 
 p{
@@ -68,12 +70,22 @@ a:hover{
 }
 
 .night-vision-effect {
-  background-image: url(../img/chiro.jpg), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 1.7px, transparent 3px);
+  /* background-image: url(../img/chiro.jpg), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 1.7px, transparent 3px); */
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  animation: lines 10ms linear 0s infinite alternate;
 }
 
+@keyframes lines {
+  from {
+    background-image: url(../img/chiro.jpg), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 1.7px, transparent 3px);
+  }
+
+  to {
+    background-image: url(../img/chiro.jpg), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 3px, transparent 6px);
+  }
+}
 /* t.js */
 .t-caret{
   font-size:inherit;
