@@ -7,7 +7,7 @@ $(function(){
 
  $('#console').t({
   delay: 0,
-  speed: 3,
+  speed: 10,
   // speed_vary: true,
 
   beep: ((/13\.3/.test(md.version('iOS')))?false:true),
